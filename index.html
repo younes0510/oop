@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="flex h-20 px-96 bg-slate-500 justify-between">
+        <img src="adidas.ico" alt="" />
+
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          xml:space="preserve"
+          viewBox="0 0 16 16"
+          id="nike"
+        >
+          <path
+            fill="#1D1D1B"
+            fill-rule="evenodd"
+            d="m7.998 7.567-2.758.722c-.974.241-1.826.562-2.647.281-1.116-.482-1.096-1.736-.264-3.07-1.471 1.214-4.118 5.096-.538 5.488.456.06 1.268-.1 2.15-.471l4.057-1.665L16 5.58 8.992 7.306l-.994.261z"
+            clip-rule="evenodd"
+          ></path>
+        </svg>
+
+        <img src="puma.ico" alt="" />
+      </nav>
+    </header>
+    <div class="flex justify-end mt-4">
+     <button class="rounded-full "  > <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="24"
+        height="24"
+        viewBox="0 0 24 24"
+        style="fill: rgba(0, 0, 0, 1); transform: msFilter"
+      >
+        <path
+          d="M21.822 7.431A1 1 0 0 0 21 7H7.333L6.179 4.23A1.994 1.994 0 0 0 4.333 3H2v2h2.333l4.744 11.385A1 1 0 0 0 10 17h8c.417 0 .79-.259.937-.648l3-8a1 1 0 0 0-.115-.921zM17.307 15h-6.64l-2.5-6h11.39l-2.25 6z"
+        ></path>
+        <circle cx="10.5" cy="19.5" r="1.5"></circle>
+        <circle cx="17.5" cy="19.5" r="1.5"></circle>
+      </svg>
+    </button>
+      : <span id="car">0</span>
+
+      <h2 class="px-6">PRIX : <span id="prix" class="prix px-3">0</span>£</h2>
+    </div>
+
+    <div class="max-w-screen-md mx-auto grid grid-cols-2 gap-8 mt-20 mb-10">
+      <div class="border rounded-sm px-3 py-1 relative group product-card">
+        <img
+          src="https://images.footlocker.com/content/dam/final/pdp/EU/31/67/316705048904/316705048904_01.png"
+          alt=""
+        />
+
+        <div class="flex justify-between">
+          <h2 id="tn"></h2>
+          <h4 class="font-bold text-xl underline">
+            <span id="tnprix" class="product-price"></span> £
+          </h4>
+          <p class="text-lg font-semibold">
+            <button
+              class="bg-transparent text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 supprimer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1); transform: msFilter"
+              >
+                <path d="M7 11h10v2H7z"></path>
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                ></path>
+              </svg>
+            </button>
+            <span class="quantity">0</span>
+          </p>
+        </div>
+        <button
+          class="bg-red-400 text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 ajouter"
+        >
+          Ajouter au panier
+        </button>
+      </div>
+
+      <div class="border rounded-sm px-3 py-1 relative group product-card">
+        <img
+          src="https://static.nike.com/a/images/t_default/yzytjyjnar2wzjiriibk/NIKE+AIR+MAX+97.png"
+          alt=""
+        />
+
+        <div class="flex justify-between">
+          <h2 id="airmax"></h2>
+          <h4 class="font-bold text-xl underline">
+            <span id="airmaxprix" class="product-price"></span> £
+          </h4>
+          <p class="text-lg font-semibold">
+            <button
+              class="bg-transparent text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 supprimer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1); transform: msFilter"
+              >
+                <path d="M7 11h10v2H7z"></path>
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                ></path>
+              </svg>
+            </button>
+            <span class="quantity">0</span>
+          </p>
+        </div>
+        <button
+          class="bg-red-400 text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 ajouter"
+        >
+          Ajouter au panier
+        </button>
+      </div>
+
+      <div class="border rounded-sm px-3 py-1 relative group product-card">
+        <img
+          src="https://idealbrandz.com/wp-content/uploads/2023/10/Puma-Carina-2-1.png"
+          alt=""
+        />
+
+        <div class="flex justify-between">
+          <h2 id="pumaca"></h2>
+          <h4 class="font-bold text-xl underline">
+            <span id="pumacaprix" class="product-price"></span> £
+          </h4>
+          <p class="text-lg font-semibold">
+            <button
+              class="bg-transparent text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 supprimer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1); transform: msFilter"
+              >
+                <path d="M7 11h10v2H7z"></path>
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                ></path>
+              </svg>
+            </button>
+            <span class="quantity">0</span>
+          </p>
+        </div>
+        <button
+          class="bg-red-400 text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 ajouter"
+        >
+          Ajouter au panier
+        </button>
+      </div>
+
+      <div class="border rounded-sm px-3 py-1 relative group product-card">
+        <img
+          src="https://static.sneakerjagers.com/products/660x660/165154.jpg"
+          alt=""
+        />
+
+        <div class="flex justify-between">
+          <h2 id="rs"></h2>
+          <h4 class="font-bold text-xl underline">
+            <span id="rsprix" class="product-price"></span> £
+          </h4>
+          <p class="text-lg font-semibold">
+            <button
+              class="bg-transparent text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 supprimer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1); transform: msFilter"
+              >
+                <path d="M7 11h10v2H7z"></path>
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                ></path>
+              </svg>
+            </button>
+            <span class="quantity">0</span>
+          </p>
+        </div>
+        <button
+          class="bg-red-400 text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 ajouter"
+        >
+          Ajouter au panier
+        </button>
+      </div>
+
+      <div class="border rounded-sm px-3 py-1 relative group product-card">
+        <img
+          src="https://assets.adidas.com/images/pg_name:Product/w_1200,f_auto,q_auto,pg_name:Product/5b735ddf4cbb4487b0713a7d7f5e0c4a_faec/Chaussure_Superstar_82_Blanc_JI2027_db01_00_standard.tiff.jpg"
+          alt=""
+        />
+
+        <div class="flex justify-between">
+          <h2 id="adidasc"></h2>
+          <h4 class="font-bold text-xl underline">
+            <span id="adidascprix" class="product-price"></span> £
+          </h4>
+          <p class="text-lg font-semibold">
+            <button
+              class="bg-transparent text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 supprimer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1); transform: msFilter"
+              >
+                <path d="M7 11h10v2H7z"></path>
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                ></path>
+              </svg>
+            </button>
+            <span class="quantity">0</span>
+          </p>
+        </div>
+        <button
+          class="bg-red-400 text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 ajouter"
+        >
+          Ajouter au panier
+        </button>
+      </div>
+
+      <div class="border rounded-sm px-3 py-1 relative group product-card">
+        <img
+          src="https://www.thenextsole.com/storage/images/B25864.png"
+          alt=""
+        />
+
+        <div class="flex justify-between">
+          <h2 id="adidast"></h2>
+          <h4 class="font-bold text-xl underline">
+            <span id="adidastprix" class="product-price"></span> £
+          </h4>
+          <p class="text-lg font-semibold">
+            <button
+              class="bg-transparent text-white py-0.5 px-3 rounded-full opacity-0 group-hover:opacity-100 supprimer"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                style="fill: rgba(0, 0, 0, 1); transform: msFilter"
+              >
+                <path d="M7 11h10v2H7z"></path>
+                <path
+                  d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z"
+                ></path>
+              </svg>
+            </button>
+            <span class="quantity">0</span>
+          </p>
+        </div>
+        <button
+          class="bg-red-400 text-white rounded-sm px-2 py-0.5 text-sm absolute top-1 left-1 opacity-0 group-hover:opacity-100 ajouter"
+        >
+          Ajouter au panier
+        </button>
+      </div>
+
+      <ul id="text">
+        
+      </ul>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
